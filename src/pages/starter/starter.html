@@ -1,0 +1,73 @@
+
+<ion-content class="bGColor">
+  <h1 text-center> Nutom </h1>
+  <p id="slogan">Where developers meet!</p>
+
+  <ion-card class="logCard">
+    <ion-card-content>
+      <ion-list class="items">
+        <ion-item>
+          <ion-label floating color="primary">Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating color="primary">Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <p id="notifyInc" *ngIf="loginStatus()">Invalid email address or password!</p>
+
+        <ion-item>
+          <button ion-button block name="Login" color="primary">Login</button>
+        </ion-item>
+
+        <p text-center style="color:grey;font-size:100%;font-weight: bold;">OR</p>
+
+        <ion-item>
+          <button ion-button block icon-left color="facebook">
+            <ion-icon name="logo-facebook"></ion-icon>
+            |Connect with Facebook
+          </button>
+        </ion-item>
+
+        <p text-center style="color:grey;font-size:100%;font-weight: bold;">Don't have an account yet?</p>
+
+        <ion-item>
+          <button ion-button block [navPush]="signupPage" name="SignUp" color="primary">Sign Up</button>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<!--
+<h1>Welcome to Nutom !</h1>
+<em>Where developers meet</em>
+<hr>
+
+<ion-list *ngIf="displayLogin">
+  <ion-item class="textbackG" color="secondary">
+    <ion-label color="primary">Email</ion-label>
+    <ion-input  color="secondary" type="email" placeholder="someone@example.com"></ion-input>
+  </ion-item>
+  <br />
+  <br />
+
+  <ion-item class="textbackG" color="secondary">
+    <ion-label color="primary">Password</ion-label>
+    <ion-input  color="secondary" type="password" placeholder="Enter password here"></ion-input>
+  </ion-item>
+</ion-list>
+
+<section id="homePageButtons">
+  <button padding ion-button  block color="secondary" (click)="onDisplayLogin()">
+    Login
+  </button>
+  <button padding ion-button block color="secondary" [navPush]="signupPage">
+    Sign Up
+  </button>
+</section>
+-->

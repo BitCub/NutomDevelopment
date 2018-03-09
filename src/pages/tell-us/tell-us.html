@@ -1,0 +1,149 @@
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only navPop>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Tell Us About You</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="introInfo">We want you to tell us a little bit about yourself! Procviding the information below mkes it easier for persons with similar interest and skills to communicate with you and fulfill the purpose of Nutom (i.e. 'Bringing developers together').
+  </p>
+
+  <ion-item-group class="groupings">
+    <ion-item-divider color="primary" center>Demographic Information</ion-item-divider>
+
+    <ion-item>
+      <ion-label color="primary">Age</ion-label>
+      <ion-input type="number" name="age" min="13" max="100"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Gender</ion-label>
+      <ion-select [(ngModel)]="gender">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Occupation</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+  </ion-item-group>
+
+  <ion-item-group class="groupings">
+    <!--Need to find a fixx to wrap the text-->
+    <ion-item-divider color="primary"><p>Software Devlopment Interest & Experience<p></ion-item-divider>
+      <p>What is your favourite software development language?</p>
+      <ion-grid>
+        <!--First row of grid-->
+        <ion-row>
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Java</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>C</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>C++</ion-label>
+          </ion-col>
+
+        </ion-row>
+
+        <!--Second row of grid-->
+        <ion-row>
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>JavaScript</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>TypeScript</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Objective-C</ion-label>
+          </ion-col>
+
+        </ion-row>
+
+        <!--Third row of grid-->
+        <ion-row>
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>SQL</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Scala</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Swift</ion-label>
+          </ion-col>
+        </ion-row>
+
+        <!--4th row of grid-->
+        <ion-row>
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>HTML & CSS</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Python</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>PHP</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-item>
+        <ion-label color="primary">Other</ion-label>
+        <ion-input type="text" name="otherLanguage"></ion-input>
+      </ion-item>
+
+      <p>What is your level of expertise with the language you have selected?</p>
+      <ion-grid>
+        <ion-row>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Basic</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Intermediate</ion-label>
+          </ion-col>
+
+          <ion-col>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Expert</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+  </ion-item-group>
+
+  <button  ion-button block color="primary" name="submit" class="completeB" [navPush]="loginPage">Complete Sign Up</button>
+
+</ion-content>

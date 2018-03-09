@@ -1,0 +1,38 @@
+page-tell-us {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+
+  .introInfo{
+    text-align: center;
+  }
+
+   .groupings{
+      padding-top: 20px;
+      text-align: center;
+
+   }
+
+   ion-item-group{
+       text-align: center;
+   }
+
+   ion-item-divider{
+     //padding-bottom: 20px;
+     overflow-wrap: break-word;
+   }
+
+  p{
+    text-align: center;
+  }
+
+  #otherClass{
+    text-align: left;
+  }
+
+  .completeB{
+    margin-top: 9%;
+    bottom: 1%;
+    position: relative;
+
+  }
+
+}

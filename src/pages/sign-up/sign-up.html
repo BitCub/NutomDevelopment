@@ -1,0 +1,55 @@
+
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only navPop>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Create Your Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <!--<section>
+    <h4>The Signing Up Process</h4>
+    <p>Password must:<p>
+    <ion-list no-lines>
+      <ion-item>Be seven(7) alphanmeric characters long</ion-item>
+      <ion-item>Contain at least one uppercase letter and one number</ion-item>
+    </ion-list>
+</section>-->
+  <ion-list>
+    <ion-item>
+      <ion-label stacked color="primary" class="sLabels">First Name</ion-label>
+      <ion-input type="text" class="sLabels" name="firstname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked color="primary" class="sLabels">Last Name</ion-label>
+      <ion-input type="text" class="sLabels" name="lastname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked color="primary" class="sLabels">Email</ion-label>
+      <ion-input type="email" class="sLabels" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked color="primary" class="sLabels">Password</ion-label>
+      <ion-input type="password" class="sLabels" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" name="password" (mouseenter)="showPasswordCriteria()"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked color="primary" class="sLabels">Re-type Password</ion-label>
+      <ion-input type="password" class="sLabels" name="cpassword"></ion-input>
+    </ion-item>
+
+    <button  ion-button block color="primary" name="submit" class="submitB" [navPush]="tellUs">Submit & Continue</button>
+
+
+
+  </ion-list>
+
+</ion-content>
